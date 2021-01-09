@@ -23,10 +23,12 @@ def tweet_extract(api, username):
     five_recent_tweets = []
 
     tweets = api.user_timeline(screen_name=username, count=10, include_rts=False, tweet_mode='extended')
-
+    
+    # Extract the first 5 recent tweets
     for tweet in tweets[:5]:
         five_recent_tweets.append(tweet)
-
+    
+    # return the 5 tweets as a list
     return five_recent_tweets
 
 
