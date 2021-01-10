@@ -19,7 +19,7 @@ Complete app is written in Python Language.
  #### PreRequisites :-
 1. Need to install Python, Tweepy 
 2. Need to have regsitered Phone number with Twilio account. (Default account limits only 3 verified numbers that can be used)
-- You can Fork these project directly from your Github account or  Download the project from below location :-
+- You can Fork these project directly from your Github account 
 - For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
