@@ -23,7 +23,7 @@ Complete app is written in Python Language.
 - For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
- 1st Argument -> user handle
+ 1st Argument -> Twitter handle whose tweet you want to hear
  2nd Argument -> registered cell#
  ```
  - Finally you should get call and listen to your favourite user Tweets !
