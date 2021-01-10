@@ -16,14 +16,17 @@ Complete app is written in Python Language.
   Please check the deployment section below to use the app and get ready to hear some tweets !
   
 ### Deployment
- You can Fork these project directly from your Github account or  Download the project from below location :-
- 
- If you have donwloded the zip file -> Save it on your local machine and Open the Github Bash window. Navigate to the folder location where the file was saved on your local     machine and enter arguments as below :
- 
- Console window takes input as follows:-
- - 1st Argument -> user handle
-
- 
+ #### PreRequisites :-
+1. Need to install Python, Tweepy 
+2. Need to have regsitered Phone number with Twilio account. (Default account limits only 3 verified numbers that can be used)
+- You can Fork these project directly from your Github account or  Download the project from below location :-
+- For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
+- Console window takes input as follows:-
+ ```
+ 1st Argument -> user handle
+ 2nd Argument -> registered cell#
+ ```
+ - Finally you should get call and listen to your favourite user Tweets !
  
  ### Tools used
  What all tech stack did we use in our project ?
@@ -31,13 +34,14 @@ Complete app is written in Python Language.
  - [Tweepy](https://www.tweepy.org/) It is a Python library for accessing the Twitter API
  
  ### Test Cases covered
- User with less than 5 tweets will be handled
- Invalid user handle will result in error message
+- User with less than 5 tweets will be handled
+- Invalid user handle will result in error message
+- Filters out images and web links. It lets user know that there is an Image inside the tweet
  
  ### Future can look like
- - User has the option to register for the app using their cell phone#
- - Schedule the call either on desired time of day or whenver the new tweet appears 
- - We welcome any suggestions/comments for enhancement
+ - User has the option to register for the app using their cell#
+ - Schedule the call either on desired time of day or whenever the new tweet appears 
+ - We welcome any suggestions/comments for enhancement !!
 
 
 
