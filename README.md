@@ -17,13 +17,24 @@ Complete app is written in Python Language.
   
 ### Deployment
  #### PreRequisites :-
-1. Need to install Python, Tweepy 
-2. Need to have regsitered Phone number with Twilio account. (Default account limits only 3 verified numbers that can be used)
-- You can Fork these project directly from your Github account 
-- For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
+1. Need to install [Python](https://www.python.org/downloads/)
+2. Need to install Tweepy Library using command 
+```
+pip install tweepy
+```
+3. Sign up for free [Twilio Account](https://www.twilio.com/login) to use desired cell# 
+4. Verify the cell# with Twilio
+
+#### Installation :-
+1. Download the github repository on your local machine using below command
+```
+git clone https://github.com/desainidhi99/AudibleTweetFun
+```
+2. Change the API token values inside the ExtractTweets.py based on the values you have
+3. For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
- 1st Argument -> Twitter handle whose tweet you want to hear
+ 1st Argument -> Twitter handle whose tweet you want to hear. Example - JoeBiden
  2nd Argument -> registered cell#
  ```
  - Finally you should get call and listen to your favourite user Tweets !
