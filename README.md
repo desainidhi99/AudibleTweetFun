@@ -20,12 +20,14 @@ Complete app is written in Python Language.
 1. Need to install Python, Tweepy 
 2. Need to have regsitered Phone number with Twilio account. (Default account limits only 3 verified numbers that can be used)
 - You can Fork these project directly from your Github account or  Download the project from below location :-
-- For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine and enter arguments as below :
+- For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
  1st Argument -> user handle
  2nd Argument -> registered cell#
  ```
+ - Finally you should get call and listen to your favourite user Tweets !
+ 
  ### Tools used
  What all tech stack did we use in our project ?
  - [Twilio](https://www.twilio.com/docs/libraries/python) It is an API to send and receive SMS, MMS, OTT messages globally and it is Secure.
