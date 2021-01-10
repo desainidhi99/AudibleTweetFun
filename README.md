@@ -8,9 +8,9 @@ App is making use of [Tweepy Library](https://www.tweepy.org/) to access the Twi
 Complete app is written in Python Language.
 
 ### Authors
--  Spencer Griffin [Devpost ID]() [Github](https://github.com/sgriffin10/)
--  Nidhi Desai [Devpost ID](https://devpost.com/desainidhi99) [Github](https://github.com/desainidhi99/)
--  Gilbert Lau [Devpost ID](https://devpost.com/laugilpc) [Github](https://github.com/laugil627/)
+-  Spencer Griffin [Devpost ID](https://devpost.com/sgriffin10) ||  [sgri@seas.upenn.edu](sgri@seas.upenn.edu) ||  [Github](https://github.com/sgriffin10/)
+-  Nidhi Desai [Devpost ID](https://devpost.com/desainidhi99) ||  [nidhide@seas.upenn.edu](nidhide@seas.upenn.edu) ||  [Github](https://github.com/desainidhi99/)
+-  Gilbert Lau [Devpost ID](https://devpost.com/laugilpc) ||  [laugilpc@seas.upenn.edu](laugilpc@seas.upenn.edu) ||  [Github](https://github.com/laugil627/)
 
 ### Usage
   Please check the deployment section below to use the app and get ready to hear some tweets !
@@ -19,11 +19,11 @@ Complete app is written in Python Language.
  #### PreRequisites :-
 1. Need to install Python, Tweepy 
 2. Need to have regsitered Phone number with Twilio account. (Default account limits only 3 verified numbers that can be used)
-- You can Fork these project directly from your Github account or  Download the project from below location :-
+- You can Fork these project directly from your Github account 
 - For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
- 1st Argument -> user handle
+ 1st Argument -> Twitter handle whose tweet you want to hear
  2nd Argument -> registered cell#
  ```
  - Finally you should get call and listen to your favourite user Tweets !
