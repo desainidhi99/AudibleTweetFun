@@ -2,6 +2,7 @@ import tweepy
 import sys
 import re
 from credentials import *
+from make_call import make_call
 
 # authorization tokens
 # Keys to be entered
@@ -44,15 +45,21 @@ def tweet_extract(api, username):
     # return output.encode('utf-8')
 
     if len(five_recent_tweets) >= 1:
+        place_holder = 1
         for i in five_recent_tweets:
             i.strip()
             i = re.sub(r'http\S+', '', i, flags=re.MULTILINE)
-            output += i + ""
+            if i == "":
+                output += "Tweet #" + str(place_holder) + ": " + "There is an image" + "."
+            else:
+                output += "Tweet #" + str(place_holder) + ": " + i + "."
             output = output.replace('\n\n', '\n')
+            place_holder += 1
+
     else:
         output = "This user has not posted any tweets."
 
-    return output.encode('utf-8')
+    return output #.encode('utf-8')
 
     # if len(five_recent_tweets) >= 1:
     #     return "\n".join(five_recent_tweets)
@@ -65,17 +72,27 @@ def main():
     '''
     Try-except to handle invalid or non-existing twitter account - TBD
     '''
-    # try:
-    #     userID = raw_input("Enter a Twitter handle: ")
-    # except tweepy.TweepError as err:
-    #     print(err)
+    try:
+        userID = input("Enter a Twitter handle: ")
+        # userID = input("Enter a Twitter handle: ")
+        api_to_use = twitter_setup()
+        result = tweet_extract(api_to_use, userID)
+        # print("\n".join(result))
+        print(result)
+        print(type(result))
 
-    userID = raw_input("Enter a Twitter handle: ")
-    api_to_use = twitter_setup()
-    result = tweet_extract(api_to_use, userID)
-    # print("\n".join(result))
-    print(result)
-    print(type(result))
+        # make_call(result)
+    except tweepy.TweepError:
+        print("This user does not exist!")
+
+        # try:
+        #     pass
+        # except expression as identifier:
+        #     pass
+
+    
+
+    
 
 if __name__ == "__main__":
     main()

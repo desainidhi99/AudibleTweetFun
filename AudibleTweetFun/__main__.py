@@ -1,13 +1,25 @@
 import sys
-#from .classmodule import MyClass
-#from .funcmodule import my_function
+from ExtractTweets import *
+from make_call import make_call
 
 def main():
-    print('inside AudibleTweetFun')
-    args = sys.argv[1:]
-    print('count of args :: {}'.format(len(args)))
-    for arg in args:
-        print('passed argument :: {}'.format(arg))
+    '''
+    Try-except to handle invalid or non-existing twitter account - TBD
+    '''
+    try:
+        userID = input("Enter a Twitter handle: ")
+        api_to_use = twitter_setup()
+        result = tweet_extract(api_to_use, userID)
+        print(result)
+
+        # make_call(result)
+    except tweepy.TweepError:
+        print("This user does not exist!")
+
+    ### number parameter for make_call function
+    ### link main function 
+
+
 
 
 
