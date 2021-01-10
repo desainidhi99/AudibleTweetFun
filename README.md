@@ -34,7 +34,7 @@ git clone https://github.com/desainidhi99/AudibleTweetFun
 3. For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
- 1st Argument -> Twitter handle whose tweet you want to hear. Example - JoeBiden
+ 1st Argument -> Twitter handle whose tweet you want to hear. Example - ElonMusk
  2nd Argument -> registered cell#
  ```
  - Finally you should get call and listen to your favourite user Tweets !
@@ -47,10 +47,11 @@ git clone https://github.com/desainidhi99/AudibleTweetFun
  ### Test Cases covered
 - User with less than 5 tweets will be handled
 - Invalid user handle will result in error message
-- Filters out images and web links. It lets user know that there is an Image inside the tweet
+- User handle is NOT case sensitive
+- Filters out images and web links for the Tweets. It lets user know that there is an Image inside the tweet.
  
  ### Future can look like
- - User has the option to register for the app using their cell#
+ - User has the option to register for the app using their cell# directly
  - Schedule the call either on desired time of day or whenever the new tweet appears 
  - We welcome any suggestions/comments for enhancement !!
 
