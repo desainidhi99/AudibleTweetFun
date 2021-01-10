@@ -37,6 +37,7 @@ Complete app is written in Python Language.
  ### Future can look like
  - User has the option to register for the app using their cell phone#
  - Schedule the call either on desired time of day or whenver the new tweet appears 
+ - We welcome any suggestions/comments for enhancement
 
 
 
