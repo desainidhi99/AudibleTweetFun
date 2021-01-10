@@ -1,4 +1,4 @@
-# Audible Tweet Fun using Twilio and TwiiterApi right on the Cell phone# !
+# Audible Tweet Fun using Twilio and TwitterApi right on the Cell phone# !
 ## Overview
 
 ### Project Summary
