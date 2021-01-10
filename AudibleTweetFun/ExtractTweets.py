@@ -66,8 +66,3 @@ def tweet_extract(api, username):
         output = "This user has not posted any tweets."
 
     return output #.encode('utf-8')
-
-def main():
-    
-if __name__ == "__main__":
-    main()
