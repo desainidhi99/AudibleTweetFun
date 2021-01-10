@@ -31,18 +31,9 @@ def tweet_extract(api, username):
     tweets = api.user_timeline(screen_name=username, count=200, include_rts=False, exclude_replies=True, tweet_mode='extended')
 
     for tweet in tweets[:5]:
-        # tweet.full_text.encode('ascii', 'ignore').decode('ascii')
         five_recent_tweets.append(tweet.full_text)
 
     output = ""
-    # for i in five_recent_tweets:
-    #     if len(five_recent_tweets) >= 1:
-    #         i = re.sub(r'http\S+', '', i, flags=re.MULTILINE)
-    #         output += i + " "
-    #     else:
-    #         output = "This user has not posted any tweets"
-    #
-    # return output.encode('utf-8')
 
     if len(five_recent_tweets) >= 1:
         place_holder = 1
@@ -61,38 +52,7 @@ def tweet_extract(api, username):
 
     return output #.encode('utf-8')
 
-    # if len(five_recent_tweets) >= 1:
-    #     return "\n".join(five_recent_tweets)
-    # # if twitter profile is empty
-    # else:
-    #     return "This user has not posted any tweets"
-
-
 def main():
-    '''
-    Try-except to handle invalid or non-existing twitter account - TBD
-    '''
-    try:
-        userID = input("Enter a Twitter handle: ")
-        # userID = input("Enter a Twitter handle: ")
-        api_to_use = twitter_setup()
-        result = tweet_extract(api_to_use, userID)
-        # print("\n".join(result))
-        print(result)
-        print(type(result))
-
-        # make_call(result)
-    except tweepy.TweepError:
-        print("This user does not exist!")
-
-        # try:
-        #     pass
-        # except expression as identifier:
-        #     pass
-
     
-
-    
-
 if __name__ == "__main__":
     main()

@@ -1,20 +1,23 @@
 import os
 from twilio.rest import Client
 
-def make_call(word):
+def make_call(word, phone_number):
     '''
-    create call with corresponding message, to phone number, 
-    and from phone number
+    create call with corresponding message, receiving phone number, 
+    and outgoing phone number
     '''
     account_sid = 'ACe3c94d6cc6715b520edef665fe6bcbb2'
     auth_token = 'd92586876aa596ff1b2dacb3e478c312'
+
+    #concatenates phone number with country code (assume CAN/USA country code)
+    phone_number = "1" + phone_number
     
     client = Client(account_sid, auth_token)
 
     call = client.calls.create(
                         twiml='<Response><Say>{}</Say></Response>'.format(word), #xml formatted word
-                        to='+16178931229', 
+                        to='{}'.format(phone_number), 
                         from_='+18154166403'
                     )
 
-    print(call.sid)
+    print("You will receive a call momentarily! Your call sid is: " + call.sid)
