@@ -23,7 +23,8 @@ def main():
             result = tweet_extract(api_to_use, userID)
             
             #debugging purposed
-            # print(result)
+            print(result)
+            stopper = input("")
 
             #makes call to phone number and reads first 5 tweets from desired twitter username
             make_call(result,phone_number)

@@ -8,10 +8,10 @@ from make_call import make_call
 # Keys to be entered
 from tweepy import TweepError
 
-consumer_key = "fjUEUMRNAhnCJ4sMwsO1s1Cok"
-consumer_secret = "wglUybYJdmOKZWzruWSYhKQ959RBxlIf6ugxl6WcrEnqE73NTr"
-access_token = "1121303268-Ba7Sp3kt39Y1qP5698h1igNFBvcASHAMltb4Agf"
-access_token_secret = "C0YISCnKC4OGxvosXvek8pg5Mptf2CXR3GVckIa0pgqx4"
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 '''
 This function sets up the Twitter access 
