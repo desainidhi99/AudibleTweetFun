@@ -30,7 +30,7 @@ pip install tweepy
 ```
 git clone https://github.com/desainidhi99/AudibleTweetFun
 ```
-2. Change the API token values inside the ExtractTweets.py based on the values you have
+2. Change the API token values inside the ExtractTweets.py based on the values you have. You can get Access Tokens From [Twitter Developer Account](https://developer.twitter.com/en/apply-for-access)
 3. For Windows Users -> Open the Github Bash window and Navigate to the folder location where the file was saved on your local machine
 - Console window takes input as follows:-
  ```
